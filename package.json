@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
@@ -29,6 +30,5 @@
     "webpack-dev-server": "^4.13.2"
   }
 }
-
 
 
