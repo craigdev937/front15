@@ -1,23 +1,22 @@
 header {
-    background: url("../../../public/bg-hero-mobile.svg");
+    background: url("@public/bg-hero-mobile.svg");
     background-repeat: no-repeat;
     background-color: var(--very-pale-cyan);
     padding-top: 2rem;
 }
 
-.header__container {
-    width: 90%;
-    margin-inline: auto;
-}
-
 .header__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header__logo {
-    width: 30%;
+.header__top a {
+    font-weight: 700;
+}
+
+.logo {
+    width: 50%;
 }
 
 .header__button {
@@ -27,28 +26,33 @@ header {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .header__button:hover {
     opacity: 0.8;
 }
 
-.header__hero {
+.hero {
     padding-block: 3rem;
 }
 
-.header__content {
+.hero__content {
     padding-block: 3rem;
     text-align: center;
 }
 
-.header__content p {
-    font-family: var(--font-heading);
-    margin-block: 2rem;
+.hero__content h1 {
+    font-size: 2rem;
 }
 
-.header__content a {
+.hero__content p {
+    font-family: var(--font-body);
+    margin-block: 2rem;
+    font-weight: 400;
+}
+
+.hero__content a {
     display: inline-block;
     text-decoration: none;
     color: var(--white);
@@ -58,8 +62,13 @@ header {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.header__content a:hover {
+.hero__content a:hover {
     opacity: 0.8;
+}
+
+.mockup__image {
+    display: block;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -69,16 +78,16 @@ header {
     .header__button {
         padding: 1rem 2.5rem;
     }
-    .header__hero {
+    .hero {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
         align-items: center;
     }
-    .header__logo {
+    .logo {
         width: 25%;
     }
-    .header__content {
+    .hero__content {
         text-align: left;
     }
 }

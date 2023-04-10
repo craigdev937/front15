@@ -7,10 +7,10 @@ export const Header = () => {
     return (
         <React.Fragment>
             <header>
-                <section className="header__container">
+                <section className="container">
                     <aside className="header__top">
                         <img
-                            className="header__logo"
+                            className="logo"
                             alt="Huddle Logo"  
                             src={Logo}
                         />
@@ -20,8 +20,8 @@ export const Header = () => {
                             >Try It Free
                         </a>
                     </aside>
-                    <aside className="header__hero">
-                        <section className="header__content">
+                    <aside className="hero">
+                        <section className="hero__content">
                             <h1>Build The Community Your Fans Will Love</h1>
                             <p>
                                 Huddle re-imagines the way we 
@@ -32,8 +32,12 @@ export const Header = () => {
                             </p>
                             <a href="#">Get Started For Free</a>
                         </section>
+                        <img
+                            className="mockup__image"
+                            alt="Mockup"  
+                            src={Mockup} 
+                        />
                     </aside>
-                    <img src={Mockup} alt="Mockup" />
                 </section>
             </header>
         </React.Fragment>
