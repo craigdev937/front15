@@ -10,7 +10,7 @@ export const Header = () => {
                 <section className="container">
                     <aside className="header__top">
                         <img
-                            className="logo"
+                            className="header__logo"
                             alt="Huddle Logo"  
                             src={Logo}
                         />
@@ -33,7 +33,6 @@ export const Header = () => {
                             <a href="#">Get Started For Free</a>
                         </section>
                         <img
-                            className="mockup__image"
                             alt="Mockup"  
                             src={Mockup} 
                         />
