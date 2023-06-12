@@ -7,7 +7,6 @@ export const Info = () => {
         <React.Fragment>
             {dBase.map((info) => (
                 <InfoCard 
-                    key={info.id} 
                     info={info} 
                 />
             ))}
